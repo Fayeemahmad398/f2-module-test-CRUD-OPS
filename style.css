@@ -1,0 +1,92 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+  color: white;
+}
+
+#container {
+  margin: auto;
+  width: 90vw;
+  /* border: 1px solid red; */
+}
+form input {
+  background-color: black;
+  border: 2px solid grey;
+  color: white;
+  height: 25px;
+  padding: 5px;
+  padding-left: 20px;
+}
+#formInput {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+#Addbtn {
+  background-color: white;
+  color: black;
+  padding-left: 195px;
+  padding-right: 195px;
+  margin-top: 20px;
+  /* border: 2px solid grey; */
+  /* font-size: 18px; */
+  height: 33px;
+}
+#searching {
+  margin: 30px 0px;
+  width: 98%;
+  background-color: black;
+  color: grey;
+  border: 1px solid grey;
+  padding: 10px;
+}
+
+#table {
+  width: 90vw;
+  min-height: 100px;
+
+  font-size: 19px;
+  border: 2px solid grey;
+  border-radius: 5px;
+}
+table #thead {
+  border-bottom: 1px solid grey !important;
+  color: grey;
+}
+table th {
+  padding: 7px;
+  border-right: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+table th:nth-child(6) {
+  border-right: none;
+}
+table td{
+  text-align: center;
+  border-right: 1px solid grey;
+}
+table td:nth-child(6){
+  border-right: none;
+}
+td{
+  color: grey;
+}
+@media (max-width:1000px) {
+  #formInput {
+    grid-template-columns: 1fr;
+  }
+  #Addbtn{
+    width: 90vw;
+    padding: 0px
+  }
+  table th {
+    padding: 2px;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+  }
+  #searching{
+    width: 85vw;
+  }
+}
